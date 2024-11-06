@@ -7418,11 +7418,6 @@ a.resume_matcher_message-actions_negative {
   margin: 0 10px 0 0;
 }
 
-.resume_top-info_location:after {
-  content: "\2022";
-  margin-left: 10px;
-}
-
 @media only screen and (max-width: 668px) {
   .resume_top-info_location {
     display: block;
@@ -8200,7 +8195,7 @@ body.has-expanded_location-map {
   flex-direction: column;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 8px;
+  padding-top: 25px;
   padding-bottom: 0;
 }
 
