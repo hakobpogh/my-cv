@@ -8713,6 +8713,11 @@ body.has-expanded_location-map {
 
   /* by @hakob */
 
+  /* comment out for technologies */
+  .js-technologies {
+    display: none;
+  }
+
   .resume_top-tags {
     display: none !important;
   }
