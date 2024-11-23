@@ -8457,6 +8457,30 @@ body.has-expanded_location-map {
   margin: 0;
 }
 
+/* by @hakob */
+.contact-section {
+  display: flex;
+  font-size: 14px;
+  gap: 16px;
+  margin-top: 16px;
+  justify-content: space-between;
+  letter-spacing: 0.2px;
+}
+
+.contact-block {
+  display: flex;
+  gap: 4px;
+}
+
+.contact-label {
+  font-weight: 700;
+}
+
+.contact-value {
+  text-decoration: none;
+  font-weight: 500;
+}
+
 @media print {
   .body {
     background: #fff;
@@ -8743,28 +8767,33 @@ body.has-expanded_location-map {
     margin-bottom: 10px;
   }
 
-  .js-employments
+  /* .js-employments
     .resume_section-content_item:nth-child(1)
     .muted
     li:nth-child(6) {
     page-break-before: always;
     padding-top: 80px;
-  }
+  } */
 
-  .js-employments .resume_section-content_item:nth-child(3n + 4) {
+  .js-employments .resume_section-content_item:nth-child(5n + 3) {
     page-break-before: always;
     padding-top: 80px;
   }
 
-  .js-employments .resume_section-content_item:nth-child(3n + 4)::before {
+  .js-employments .resume_section-content_item:nth-child(5n + 3)::before {
     top: 90px;
   }
 
-  .js-employments .resume_section-content_item:nth-child(3n + 4)::after {
+  .js-employments .resume_section-content_item:nth-child(5n + 3)::after {
     top: 105px;
   }
 
+  .for-experience {
+    display: none !important;
+  }
+
   .for-experience .resume_section-title {
+    page-break-before: always;
     padding-top: 60px;
   }
 
@@ -8773,18 +8802,9 @@ body.has-expanded_location-map {
     margin-bottom: 10px;
   }
 
-  .for-experience .resume_section-content_item:nth-child(1) {
-    page-break-before: always;
-    padding-top: 60px;
-  }
-
   .for-experience .resume_section-content_item:nth-child(8) {
     page-break-before: always;
     padding-top: 80px;
-  }
-
-  .js-educations:not(.is-certification) .resume_section-title {
-    padding-top: 60px;
   }
 
   .js-educations:not(.is-certification) .resume_section-content_item {
@@ -8792,9 +8812,11 @@ body.has-expanded_location-map {
     margin-bottom: 10px;
   }
 
-  .js-educations:not(.is-certification)
-    .resume_section-content_item:nth-child(1) {
-    page-break-before: always;
-    padding-top: 60px;
+  .grid-row {
+    overflow: hidden;
+  }
+
+  .flexbox .resume_section-inner {
+    flex-direction: column;
   }
 }
